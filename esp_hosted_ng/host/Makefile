@@ -1,7 +1,7 @@
 # Toolchain and kernel
-CROSS_COMPILE :=
-KERNEL := /lib/modules/$(shell uname -r)/build
-ARCH := $(shell uname -m)
+CROSS_COMPILE := /home/VuOS/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-
+KERNEL := ../../../linux_5.10/build/kernel_output/modules/lib/modules/5.10.4-tag-/build
+ARCH := riscv
 
 # Normalize ARCH
 ifeq ($(ARCH), x86_64)
